@@ -1,0 +1,11 @@
+StudentID,FirstName,LastName,Age,Gender,Class,Section,Subject,Marks,Grade,Attendance(%)
+1,Aarav,Sharma,17,Male,12,A,Mathematics,88,A,92
+2,Priya,Patel,16,Female,11,B,Physics,76,B,89
+3,Rohan,Verma,17,Male,12,A,Chemistry,65,C,78
+4,Sneha,Iyer,16,Female,11,A,Biology,91,A,95
+5,Karan,Singh,17,Male,12,B,Mathematics,54,D,70
+6,Ananya,Nair,16,Female,11,B,English,82,B,88
+7,Vikram,Rao,17,Male,12,A,Physics,73,B,85
+8,Meera,Joshi,16,Female,11,A,Chemistry,95,A,97
+9,Arjun,Reddy,17,Male,12,B,Biology,60,C,74
+10,Divya,Menon,16,Female,11,B,Mathematics,88,A,91
