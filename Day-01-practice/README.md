@@ -2,7 +2,7 @@
 
 ## 📅 Day 1 of 10 — Pandas Mastery Journey
 
-### 🎯 Topics Covered
+###  Topics Covered
 - Introduction to `pandas.Series`
 - Introduction to `pandas.DataFrame`
 - Creating Series from lists and dictionaries
@@ -14,7 +14,7 @@
 
 ---
 
-### 📝 Problems Solved
+###  Problems Solved
 
 1. **Series with custom index**
    Created a `Series` of 5 numbers with custom index labels (`'a', 'b', 'c', 'd', 'e'`).
@@ -41,7 +41,7 @@
 
 ---
 
-### 💡 Key Learnings
+###  Key Learnings
 - `Series` = 1D labeled array; `DataFrame` = 2D labeled table (collection of Series).
 - Selecting one column with `df['col']` returns a Series; selecting multiple columns with `df[['col1','col2']]` returns a DataFrame.
 - `head()`/`tail()` help preview data, `info()` shows structure & data types, `describe()` gives statistical summary of numeric columns.
