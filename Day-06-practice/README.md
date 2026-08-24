@@ -1,40 +1,57 @@
 # Day 6 — Pivot Tables & Reshaping
 
-##  Topic
-Reshaping data and building pivot tables using `pivot()`, `pivot_table()`, `melt()`, `stack()`, and `unstack()`.
+##  Overview
+Day 6 of the **Pandas Mastery Journey** covers how to reshape data between different layouts — a critical skill for reporting, visualization, and preparing data for machine learning. Data often needs to move between "wide" formats (one row per entity, values spread across columns) and "long" formats (one row per observation), depending on the task at hand.
 
-##  What I Learned
-- How to summarize data using `pivot_table()` with different aggregation functions (`sum`, `mean`, `count`)
-- The difference between `pivot()` (no aggregation) and `pivot_table()` (with aggregation)
-- How to handle missing combinations in a pivot using `fill_value`
-- How to add row/column totals using `margins=True`
-- How to convert data from wide format to long format using `melt()`
-- How to work with multi-level indexes using `stack()`, `unstack()`, and `reset_index()`
+This day explores pivot tables for summarizing data, `melt()` for unpivoting, and `stack()`/`unstack()` for working with multi-level indexes.
+
+##  Learning Objectives
+By the end of this day's practice, the goal is to be comfortable with:
+- Building a pivot table with `pivot_table()`
+- Applying different aggregation functions within a pivot table
+- Handling missing combinations with `fill_value`
+- Understanding the difference between `pivot()` and `pivot_table()`
+- Converting wide-format data to long format using `melt()`
+- Using `stack()` and `unstack()` on multi-index DataFrames
+- Adding row/column totals with `margins=True`
+- Working with multi-level indexes and resetting them
 
 ##  Exercises Covered
-1. Created a DataFrame with `Date`, `City`, `Product`, `Sales` columns
-2. Built a pivot table summarizing total sales by `City` and `Product`
-3. Compared `aggfunc='sum'`, `'mean'`, and `'count'` outputs
-4. Used `fill_value=0` to handle missing combinations
-5. Compared plain `pivot()` vs `pivot_table()`
-6. Converted wide-format data to long-format using `melt()`
-7. Practiced `stack()` and `unstack()` on a multi-index DataFrame
-8. Added totals to a pivot table using `margins=True`
-9. Created and reset a multi-level index using `set_index()` and `reset_index()`
 
-##  Key Concept — `pivot` vs `pivot_table` vs `melt`
+| # | Concept | Method(s) Used |
+|---|---------|-----------------|
+| 1 | Creating a DataFrame with categorical + numeric data | `pd.DataFrame()` |
+| 2 | Building a pivot table | `pd.pivot_table(values, index, columns, aggfunc)` |
+| 3 | Changing aggregation function | `aggfunc='mean'/'count'` |
+| 4 | Filling missing pivot cells | `fill_value=0` |
+| 5 | Plain pivot without aggregation | `df.pivot()` |
+| 6 | Unpivoting wide to long format | `pd.melt()` |
+| 7 | Stacking a multi-index DataFrame | `df.stack()` |
+| 8 | Unstacking a multi-index DataFrame | `df.unstack()` |
+| 9 | Adding totals to a pivot table | `margins=True` |
+| 10 | Setting and resetting multi-level index | `set_index([...])`, `reset_index()` |
 
-| Function | Purpose | Handles Duplicates? |
-|---|---|---|
-| `pivot()` | Reshape data (no aggregation) | ❌ No — errors on duplicate entries |
-| `pivot_table()` | Reshape data **with** aggregation | ✅ Yes — aggregates duplicates |
-| `melt()` | Convert wide format → long format | N/A — unpivoting operation |
+##  Key Concept — `pivot()` vs `pivot_table()` vs `melt()`
 
-**In short:** Use `pivot()` when data has no duplicate index/column pairs, `pivot_table()` when you need to aggregate, and `melt()` when you want to reshape wide data into a tidy long format.
+**`pivot()`** reshapes data without any aggregation — it assumes each index/column combination has exactly one value, and will raise an error if duplicates exist.
 
-## 📂 Files
+**`pivot_table()`** is a more flexible version of `pivot()` that supports aggregation (mean, sum, count, etc.), making it suitable for datasets with duplicate index/column combinations.
+
+**`melt()`** does the opposite of pivoting — it converts wide-format data (many columns) into long-format data (fewer columns, more rows), which is often the required shape for plotting libraries and statistical models.
+
+**In short:** use `pivot()` for simple, unique reshaping, `pivot_table()` when aggregation is needed, and `melt()` to unpivot data back into a long format.
+
+##  Files
 - `day6_pandas.py` / `day6_pandas.ipynb` — solved exercises
 - `README.md` — this file
+
+##  Series Progress
+- ✅ Day 1 — Pandas Basics: Series & DataFrame
+- ✅ Day 2 — Indexing, Selection & Filtering
+- ✅ Day 3 — Handling Missing Data
+- ✅ Day 4 — GroupBy & Aggregation
+- ✅ Day 5 — Merging, Joining & Concatenation
+- ✅ Day 6 — Pivot Tables & Reshaping
 
 ---
 
