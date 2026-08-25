@@ -87,16 +87,15 @@ A structured **10-day daily practice roadmap** to master Pandas — from basics 
 
 ---
 
-### 🔹 Day 6 — String Operations & Text Data
-**What it covers:** Cleaning and manipulating text columns.
-- The `.str` accessor for string methods on a Series
-- Case conversion: `.str.upper()`, `.str.lower()`
-- Whitespace cleanup: `.str.strip()`
-- Searching text: `.str.contains()`, `.str.startswith()`
-- Splitting and extracting: `.str.split()`, `.str.extract()`
-- Replacing text: `.str.replace()`
+### 🔹 Day 6 — Pivot Tables & Reshaping
+**What it covers:** Restructuring data for better analysis.
 
-**Why it matters:** Text data (names, categories, free-text fields) is common and often needs cleaning before it's usable.
+- pivot_table() — Excel-style pivot tables in Pandas
+- pivot() vs pivot_table() — when to use which
+- melt() — converting wide data to long format
+- stack() / unstack() — reshaping hierarchical data
+
+**Why it matters:** Data often arrives in the "wrong shape" for analysis — reshaping is a key skill for reporting and visualization.
 
 ---
 
@@ -112,14 +111,18 @@ A structured **10-day daily practice roadmap** to master Pandas — from basics 
 
 ---
 
-### 🔹 Day 8 — Pivot Tables & Reshaping
-**What it covers:** Restructuring data for better analysis.
-- `pivot_table()` — Excel-style pivot tables in Pandas
-- `pivot()` vs `pivot_table()` — when to use which
-- `melt()` — converting wide data to long format
-- `stack()` / `unstack()` — reshaping hierarchical data
+### 🔹 Day 8 — String Operations & Text Data
 
-**Why it matters:** Data often arrives in the "wrong shape" for analysis — reshaping is a key skill for reporting and visualization.
+**What it covers:** Cleaning and manipulating text columns.
+
+- The .str accessor for string methods on a Series
+- Case conversion: .str.upper(), .str.lower()
+- Whitespace cleanup: .str.strip()
+- Searching text: .str.contains(), .str.startswith()
+- Splitting and extracting: .str.split(), .str.extract()
+- Replacing text: .str.replace()
+
+**Why it matters:** Text data (names, categories, free-text fields) is common and often needs cleaning before it's usable.
 
 ---
 
