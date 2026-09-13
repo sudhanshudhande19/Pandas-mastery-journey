@@ -182,8 +182,10 @@ Complete a solid, practical grip on Pandas in 10 days — covering data structur
 
 ---
 
-<p align="center">
-  ✨ <b>Made with consistency & curiosity by</b> ✨
-  <br/><br/>
-  <img src="https://img.shields.io/badge/sudhanshudhande19-2ecc71?style=for-the-badge&logo=github&logoColor=white"/>
-</p>
+<div align="center">
+
+### ✨ Made by **Sudhanshu Dhande** ✨
+[![GitHub](https://img.shields.io/badge/GitHub-sudhanshudhande19-1b263b?style=for-the-badge&logo=github&logoColor=green)](https://github.com/sudhanshudhande19)
+ 
+</div>
+ 
