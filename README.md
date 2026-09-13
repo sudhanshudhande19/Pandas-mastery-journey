@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="banner.svg" alt="Pandas Mastery Journey Banner" width="100%"/>
+</p>
 
 # 🐼 Pandas Mastery Journey
 
@@ -178,4 +181,9 @@ Each day's folder contains the solved code/notebook and a short day-wise README 
 Complete a solid, practical grip on Pandas in 10 days — covering data structures, cleaning, aggregation, combining datasets, text/date handling, reshaping, visualization, and a final capstone project.
 
 ---
-# Created by: Sudhanshu Dhande
+
+<p align="center">
+  ✨ <b>Made with consistency & curiosity by</b> ✨
+  <br/><br/>
+  <img src="https://img.shields.io/badge/sudhanshudhande19-2ecc71?style=for-the-badge&logo=github&logoColor=white"/>
+</p>
